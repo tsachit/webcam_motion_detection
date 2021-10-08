@@ -33,3 +33,10 @@ alias wmd="source ~/webcam_motion_detection/venv/bin/activate && python ~/webcam
 ```
 
 *The above example assumes that the project is in home folder, change it if you place it else where. Sorry if this does not work on windows* 😂
+
+
+# TODO:
+- Noise filter for detection, sometimes it detects even when nothing is being changed
+- Improve or increase the `alert_diff_limit` logic
+- Send push notification to the phone
+- Track the change detected and record the video
