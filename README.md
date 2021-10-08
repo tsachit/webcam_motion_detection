@@ -4,7 +4,7 @@ Just a simple version to make your webcam (external too) a motion detection came
 ### Setup
 Note: Only if you want to use venv
 ```
-> python -m venv venv
+> python(3) -m venv venv
 > source venv/bin/activate
 ```
 
