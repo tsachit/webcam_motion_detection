@@ -40,3 +40,6 @@ alias wmd="source ~/webcam_motion_detection/venv/bin/activate && python ~/webcam
 - Improve or increase the `alert_diff_limit` logic
 - Send push notification to the phone
 - Track the change detected and record the video
+
+# Future plan:
+- Face recognition with multiple camers
