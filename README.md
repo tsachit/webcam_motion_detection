@@ -1,5 +1,5 @@
 # Webcam Motion Detection
-Just a simple version to make your webcam (external too) a motion detection camera. It plays two different kind of alarm. I'm using this to detect if there are people at my convenience store.
+I know there's already better motion detection CCTV in the market. This is just a simple(low-budget DIY) version to make your webcam (external too) a motion detection camera. It plays two different kind of alarm. I'm using this to detect if there are people at my convenience store.
 
 ### Setup
 Note: Only if you want to use venv
@@ -13,7 +13,7 @@ install all the dependency using this
 pip install -r requirements.txt
 ```
 
-Change interval value in `main.py` to increase/decrease the frequency.
+Change `alert_diff_limit` value in `main.py` to increase/decrease the time limit for alert.
 
 ### How to run
 If you're using venv then activate it
@@ -32,7 +32,7 @@ You can also create alias in your `.bashrc` or `.zshrc` for shortcut like this.
 alias wmd="source ~/webcam_motion_detection/venv/bin/activate && python ~/webcam_motion_detection/main.py && deactivate"
 ```
 
-*The above example assumes that the project is in home folder, change it if you place it else where. Sorry if this does not work on windows* 😂
+*The above example assumes that the project is in home folder, change it if you place it elsewhere. Sorry if this does not work on windows* 😂
 
 
 # TODO:
