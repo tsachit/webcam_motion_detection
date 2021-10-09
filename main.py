@@ -1,7 +1,7 @@
 import cv2
 import random
 from datetime import datetime, timedelta
-from playsound import playsound
+import simpleaudio as sa
 
 # in seconds
 alert_diff_limit=15
@@ -20,10 +20,16 @@ def alert(type=None, rate=None):
         if(rate == None):
             rate = 200
         # Just for variation
+        sound_file = 'sounds/Intruder Alert.wav'
         if(random.choice([True, False])):
-            playsound('sounds/Red Alert.wav')
-        else:
-            playsound('sounds/Intruder Alert.wav')
+            sound_file = 'sounds/Red Alert.wav'
+
+        wave_object = sa.WaveObject.from_wave_file(sound_file)
+        print('playing alarm sound using simpleaudio')
+
+        # define an object to control the play
+        play_object = wave_object.play()
+        play_object.wait_done()
 
     except Exception as error:
         print( "<p>Error: %s</p>" % error )
